@@ -44,3 +44,16 @@ div {
   option {
     color: aqua;
   }
+
+  footer {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+@media only screen and (min-width: 125px) and (max-width: 760px) {
+
+  #infoSW {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
