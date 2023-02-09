@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Project</title>
+    <link rel="shortcut icon" href="starwars.ico">
+    <link rel="stylesheet" href="style/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>STAR WARS API!</h1>
+    </header>
+    <main>
+        <section>
+            <p>This project give you the chance to choose the General Information of the characters of the world of Star Wars, take a moment to think which of the names you thinking now!<br>Take your time!</p>
+        </section>
+        <hr>
+        <section>
+            <h1>Star Wars Characters</h1>
+            <div>
+                <button id="previous" type="button">&lt Previous</button>
+                <button id="next" type="button">Next &gt</button>
+            </div>
+            <p>
+                General Information:
+                <select id="infoSelection">
+                    <option value="basicInfo">Basic Character Information</option>
+                    <option 
+                    value="basicColorInfo">Color Hair and More</option>
+                </select>
+            </p>
+            <div id="infoSW">
+            </div>
+        </section>
+    </main>
+    <div class="overlay">
+        <div class="loading">LOADING...</div>
+    </div>
+</body>
+</html>
