@@ -1,0 +1,56 @@
+<!-- Modifying the docuemnt -->
+
+<!-- Insert and create elements and insert methods  -->
+
+<ol id="ol">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ol>
+
+<script>
+    ol.before("before");
+    ol.after("after");
+
+    let liFirts = document.createElement("li");
+    liFirts.innerHTML = "prepend";
+    ol.prepend(liFirts);
+
+    let liLast = document.createElement("li");
+    liLast.innerHTML = "append";
+    ol.append(liLast);
+
+</script>
+
+<div id="div"></div>
+
+<script>
+    div.after("Hello Word", document.createElement("hr"));
+</script>
+
+<!-- Insert Adjacent HTML/Text/Element -->
+
+<div id="div2"></div>
+<script>
+    div2.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+    div2.insertAdjacentHTML('afterend', '<p>Bye</p>');
+</script>
+
+<!-- More complete sample about Insert Adjacent HTML/TEXT/ELEMENT -->
+
+<style>
+    .alert {
+        padding: 15px;
+        border: 1px bold #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+</style>
+
+<script>
+    document.body.insertAdjacentHTML("afterbegin", "<div class='alert'> <strong>Hi there!</strong> You've read an important message.</div>")
+</script>
+
