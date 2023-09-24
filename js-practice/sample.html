@@ -54,3 +54,25 @@
     document.body.insertAdjacentHTML("afterbegin", "<div class='alert'> <strong>Hi there!</strong> You've read an important message.</div>")
 </script>
 
+<!-- Cloning nodes: cloneNode -->
+
+<style>
+    .alert2 {
+      padding: 15px;
+      border: 1px solid #d6e9c6;
+      border-radius: 4px;
+      color: #3c763d;
+      background-color: #dff0d8;
+    }
+    </style>
+    
+    <div class="alert2" id="div3">
+      <strong>Hi there!</strong> You've read an important message.
+    </div>
+    
+    <script>
+      let div4 = div3.cloneNode(true); // clone the message
+      div4.querySelector('strong').innerHTML = 'Bye there!'; // change the clone
+    
+      div3.after(div4); // show the clone after the existing div
+    </script>
